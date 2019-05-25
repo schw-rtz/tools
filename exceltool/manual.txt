@@ -1,0 +1,53 @@
+$>java -jar exceltool-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+Please provide a command name.
+------------------------------------------------------------------------
+
+excelTool - do stuff with excel file
+
+Commands:
+
+    * about
+          o Displays information on various topics
+    * charset
+          o shows character encodings
+    * help
+          o Displays help on various commands.
+    * toCsv
+          o Converts a sheet to csv.
+
+Authors:
+
+    * Daniel Schwartz, schw@rtz.se
+    * Daniel Schwartz, daniel.schw@rtz.se
+------------------------------------------------------------------------
+
+
+$>java -jar exceltool-0.0.1-SNAPSHOT-jar-with-dependencies.jar help toCsv
+------------------------------------------------------------------------
+
+toCsv - Converts a sheet to csv.
+
+Arguments:
+
+      -sheet: Name of sheet
+
+      -in: Excel file
+
+      -csvOut: Csv output. Filename and delimeter
+
+         1. file (mandatory): Filename or ':out:'. For instance:
+            "aFile.csv"
+         2. modifier (optional): Modifiers to set delimeter and
+            character encoding. For instance: ",+UTF-8"
+
+Example:
+
+      toCsv -sheet sheet1 -in myExcelFile.xlsx -csvOut aFile.csv
+      ,+UTF-8
+
+Author: Daniel Schwartz, daniel.schw@rtz.se
+
+------------------------------------------------------------------------
+
+
+
